@@ -60,22 +60,22 @@
               class="contact-link contact-link link interact"
               href="mailto:info@devstudio.com"
             >
-            <svg class="header-icon" width="16" height="12">
-            <use href="./images/icons.svg#icon-envelope">
-            </use>
-            </svg>info@devstudio.com</a
-            >
+              <svg class="header-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="contact-item">
             <a
               class="contac-link contact-link link interact"
               href="tel:+380961111111"
             >
-            <svg class="header-icon" width="10" height="16">
-            <use href="./images/icons.svg#icon-smartphone">
-            </use>
-            </svg>+38 096 111 11 11</a
-            >
+              <svg class="header-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -86,7 +86,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-btn btn" type="button" data-modal-open>
+          <button class="hero-btn btn main-btn" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -646,18 +646,98 @@
             </li>
           </ul>
         </div>
+        <div class="subscription">
+          <p class="subscription-title">Підпишіться на розсилку</p>
+          <form class="subscription-form">
+            <input
+              class="subscription-input"
+              type="email"
+              name="user-mail"
+              placeholder="E-mail"
+            />
+            <button class="subscription-btn main-btn btn" type="submit">
+              Підписатися
+              <svg class="subscription-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" data-modal-close>
+        <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-btn-icon" width="18" height="18">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="form" name="user-data">
+          <strong class="form-title"
+            >Залиште свої дані, ми вам передзвонимо</strong
+          >
+          <label class="form-group">
+            <span class="form-label">Ім'я</span>
+            <input class="form-input" type="text" name="user-name" required />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label class="form-group">
+            <span class="form-label">Телефон</span>
+            <input class="form-input" type="tel" name="user-phone" required />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="form-group">
+            <span class="form-label">Пошта</span>
+            <input class="form-input" type="email" name="user-mail" required />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label class="form-group form-comment">
+            <span class="form-label">Коментар</span>
+            <textarea
+              class="comment"
+              name="feedback"
+              rows="10"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+          <label class="form-group checkbox">
+            <input
+              class="form-checkbox visually-hidden"
+              type="checkbox"
+              name="agreement"
+              required
+            />
+            <svg class="checkbox-icon" width="16" height="15">
+              <use
+                class="form-icon-uncheck"
+                href="./images/icons.svg#icon-uncheck"
+              ></use>
+              <use
+                class="form-icon-check"
+                href="./images/icons.svg#icon-check"
+              ></use>
+            </svg>
+            <span class="checkbox-txt"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="form-link" href="" rel="noopener noreferrer"
+                >Умови договору</a
+              ></span
+            >
+          </label>
+          <button class="btn main-btn form-btn" type="submit">
+            Відправити
+          </button>
+        </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
