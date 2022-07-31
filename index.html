@@ -86,7 +86,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-btn btn main-btn" type="button" data-modal-open>
+          <button class="btn main-btn" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -102,7 +102,9 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="features-subtitle">Внимание к деталям</h3>
+              <h3 class="features-subtitle item-subtitle">
+                Внимание к деталям
+              </h3>
               <p class="features-txt">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
@@ -114,7 +116,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="features-subtitle">Пунктуальность</h3>
+              <h3 class="features-subtitle item-subtitle">Пунктуальность</h3>
               <p class="features-txt">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
@@ -126,7 +128,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="features-subtitle">Планирование</h3>
+              <h3 class="features-subtitle item-subtitle">Планирование</h3>
               <p class="features-txt">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
@@ -138,7 +140,9 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="features-subtitle">Современные технологии</h3>
+              <h3 class="features-subtitle item-subtitle">
+                Современные технологии
+              </h3>
               <p class="features-txt">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -161,7 +165,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="about-box">
+                <div class="about-box item-subtitle">
                   <p class="about-txt">Десктопні додатки</p>
                 </div>
               </div>
@@ -175,7 +179,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="about-box">
+                <div class="about-box item-subtitle">
                   <p class="about-txt">Мобільні додатки</p>
                 </div>
               </div>
@@ -189,7 +193,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="about-box">
+                <div class="about-box item-subtitle">
                   <p class="about-txt">Дизайнерські рішення</p>
                 </div>
               </div>
@@ -590,7 +594,7 @@
           </address>
         </div>
         <div class="footer-social">
-          <p class="social-title">приєднуйтесь</p>
+          <p class="social-title item-subtitle">приєднуйтесь</p>
           <ul class="socials list">
             <li class="socials-item">
               <a
@@ -647,7 +651,9 @@
           </ul>
         </div>
         <div class="subscription">
-          <p class="subscription-title">Підпишіться на розсилку</p>
+          <p class="subscription-title item-subtitle">
+            Підпишіться на розсилку
+          </p>
           <form class="subscription-form">
             <input
               class="subscription-input"
@@ -655,7 +661,7 @@
               name="user-mail"
               placeholder="E-mail"
             />
-            <button class="subscription-btn main-btn btn" type="submit">
+            <button class="main-btn btn" type="submit">
               Підписатися
               <svg class="subscription-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -679,24 +685,35 @@
           >
           <label class="form-group">
             <span class="form-label">Ім'я</span>
-            <input class="form-input" type="text" name="user-name" required />
-            <svg class="form-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
+            <span class="form-group-wrapper">
+              <input class="form-input" type="text" name="user-name" required />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </span>
           </label>
           <label class="form-group">
             <span class="form-label">Телефон</span>
-            <input class="form-input" type="tel" name="user-phone" required />
-            <svg class="form-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
+            <span class="form-group-wrapper">
+              <input class="form-input" type="tel" name="user-phone" required />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </span>
           </label>
           <label class="form-group">
             <span class="form-label">Пошта</span>
-            <input class="form-input" type="email" name="user-mail" required />
-            <svg class="form-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
+            <span class="form-group-wrapper">
+              <input
+                class="form-input"
+                type="email"
+                name="user-mail"
+                required
+              />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </span>
           </label>
           <label class="form-group form-comment">
             <span class="form-label">Коментар</span>
@@ -731,9 +748,7 @@
               ></span
             >
           </label>
-          <button class="btn main-btn form-btn" type="submit">
-            Відправити
-          </button>
+          <button class="btn main-btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
